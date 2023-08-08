@@ -37,7 +37,7 @@ h1, h2{
   background: -webkit-linear-gradient(var(--color-secundary), var(--color-primario));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin: 4rem .4rem 2rem .4rem ;
+  margin: 4rem 0 ;
 }
  
 .header-nav{
