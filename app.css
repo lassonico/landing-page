@@ -154,8 +154,8 @@ footer{
   text-align: center;
   color: #a1a1a1;
   font-size: 14px;
-  margin: 0 1rem;
-  position: absolute;
+  margin: 3rem 1rem 0 1rem;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
