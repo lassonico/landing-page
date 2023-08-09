@@ -66,6 +66,7 @@ h1, h2{
 }
 .contenedor-img{
   position: relative;
+  overflow: hidden;
 }
 
 .textos{
@@ -81,7 +82,7 @@ h1, h2{
   -webkit-box-shadow: 4px 4px 39px -14px rgba(0,0,0,0.75);
   -moz-box-shadow: 4px 4px 39px -14px rgba(0,0,0,0.75);
   box-shadow: 4px 4px 39px -14px rgba(0,0,0,0.75);
-  animation: estirar 2.7s ease-in-out infinite;
+  animation: estirar 1.5s ease-in-out;
 }
 
 .textos-derecha{
@@ -97,7 +98,7 @@ h1, h2{
   -webkit-box-shadow: 4px 4px 39px -14px rgba(0,0,0,0.75);
   -moz-box-shadow: 4px 4px 39px -14px rgba(0,0,0,0.75);
   box-shadow: 4px 4px 39px -14px rgba(0,0,0,0.75);
-  animation: bajar 2.5s ease-in-out infinite;
+  animation: bajar 2s ease-in-out;
 }
 .aclaracion{
   text-align: center;
@@ -177,13 +178,13 @@ footer a{
 }
 
 @keyframes estirar{
-  0%{ transform: translateY(0);}
-  50%{ transform: translateY(7px);}
-  100%{ transform: translateY(0);}
+  0%{opacity: 0; transform: translateY(-60px);}
+  60%{opacity: 0;}
+  100%{opacity: 1;transform: translateY(0px);}
 }
 
 @keyframes bajar{
-  0%{ transform: scale(1);}
-  50%{ transform: scale(1.07);}
-  100%{ transform: scale(1);}
+  0%{opacity: 0; transform: translateX(60px);}
+  60%{opacity: 0;}
+  100%{opacity: 1;transform: translateX(0px);}
 }
