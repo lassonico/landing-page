@@ -32,12 +32,12 @@ h1, h2{
 }
 
 .title{
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   line-height: 1;
   background: -webkit-linear-gradient( var(--color-primario), var(--color-secundary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin: 4rem 0;
+  margin: 6rem 10px 0 10px ;
 
 }
  
@@ -46,6 +46,10 @@ h1, h2{
   align-items: center;
   justify-content: center;
   margin-top: .5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .header-nav .flor{
@@ -66,7 +70,6 @@ h1, h2{
 }
 .contenedor-img{
   position: relative;
-  overflow: hidden;
 }
 
 .textos{
@@ -123,6 +126,7 @@ h1, h2{
   position: relative;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
   overflow: hidden;
+  animation: animado 1.5s ease-in-out infinite;
 }
 
 .btn span {
@@ -150,6 +154,7 @@ h1, h2{
   top: 150%;
   left: 0;
   transform: translateY(-50%);
+  /* animation: animadotwo 1.5s infinite; */
 }
 
 .btn:hover .btn-text-one {
@@ -158,6 +163,18 @@ h1, h2{
 
 .btn:hover .btn-text-two {
   top: 50%;
+}
+
+@keyframes animado{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(0.98);
+  }
+  100%{
+    transform: scale(1);
+  }
 }
 
 footer{
@@ -184,7 +201,7 @@ footer a{
 }
 
 @keyframes bajar{
-  0%{opacity: 0; transform: translateX(60px);}
+  0%{opacity: 0; transform: translateX(-60px);}
   60%{opacity: 0;}
   100%{opacity: 1;transform: translateX(0px);}
 }
