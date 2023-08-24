@@ -8,7 +8,8 @@
 }
 
 :root{
-  --bagcground-primario: #f1f5f9;
+  /* --bagcground-primario: #f1f5f9; */
+  --bagcground-primario: #fff;
   --color-primario: #0c6c8e;
   --color-secundary: #29bbef;
 }
@@ -34,9 +35,8 @@ h1, h2{
 .title{
   font-size: 2.2rem;
   line-height: 1;
-  background: -webkit-linear-gradient( var(--color-primario), var(--color-secundary));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--color-primario);
+  text-shadow: 3px 3px 9px #9e9e9e;
   margin: 6rem 10px 0 10px ;
 
 }
@@ -45,7 +45,7 @@ h1, h2{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: .5rem;
+  margin-top: .7rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -74,34 +74,34 @@ h1, h2{
 
 .textos{
   position: absolute;
-  background-color: white;
+  background-color: #ffffff;
   width: 130px;
   top: 5rem;
   left: 0;
   padding: .7rem;
   border-radius: 10px;
   font-size: 11px;
-  color: #a1a1a1;
+  color: var(--color-primario);
   -webkit-box-shadow: 4px 4px 39px -14px rgba(0,0,0,0.75);
   -moz-box-shadow: 4px 4px 39px -14px rgba(0,0,0,0.75);
   box-shadow: 4px 4px 39px -14px rgba(0,0,0,0.75);
-  animation: estirar 1.5s ease-in-out;
+  animation: estirar .3s ease-in-out;
 }
 
 .textos-derecha{
   position: absolute;
-  background-color: white;
+  background-color: #ffffff;
   width: 130px;
   top: 9rem;
   right: 0;
   padding: .7rem;
   border-radius: 10px;
   font-size: 11px;
-  color: #a1a1a1;
+  color: var(--color-primario);
   -webkit-box-shadow: 4px 4px 39px -14px rgba(0,0,0,0.75);
   -moz-box-shadow: 4px 4px 39px -14px rgba(0,0,0,0.75);
   box-shadow: 4px 4px 39px -14px rgba(0,0,0,0.75);
-  animation: bajar 2s ease-in-out;
+  animation: bajar .2s ease-in-out;
 }
 .aclaracion{
   text-align: center;
@@ -117,7 +117,7 @@ h1, h2{
   height: 55px;
   margin: 0 auto;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to top, #00154c, #12376e, #23487f);
+  background: linear-gradient(to top, #28D146, #36ff5a, #28D146);
   color: #fff;
   border-radius: 50px;
   border: none;
@@ -130,7 +130,7 @@ h1, h2{
 }
 
 .btn span {
-  font-size: 18px;
+  font-size: 21px;
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: top 0.5s;
@@ -195,13 +195,17 @@ footer a{
 }
 
 @keyframes estirar{
-  0%{opacity: 0; transform: translateY(-60px);}
-  60%{opacity: 0;}
-  100%{opacity: 1;transform: translateY(0px);}
+  0%{transform: scale(0);}
+  50%{transform: scale(1.3);}
+  100%{transform: scale(1);}
 }
 
 @keyframes bajar{
-  0%{opacity: 0; transform: translateX(-60px);}
-  60%{opacity: 0;}
-  100%{opacity: 1;transform: translateX(0px);}
+  0%{transform: scale(0);}
+  50%{transform: scale(1.4);}
+  100%{transform: scale(1);}
 }
+
+/* 0%{opacity: 0; transform: translateX(-60px);}
+60%{opacity: 0;}
+100%{opacity: 1;transform: translateX(0px);} */
