@@ -20,7 +20,7 @@ function animacionesc(){
     setTimeout(() => {
         textoc.classList.remove('texthidden');
         textoc.classList.add('animaciontextc');
-    }, 2000)
+    }, 1200)
 }
 
 function animacionesi(){
