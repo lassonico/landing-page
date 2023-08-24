@@ -55,9 +55,9 @@ h1, h2{
   background-color: var(--color-primario);
   padding: .3rem;
   display: block;
-  width: 60%;
+  width: 75%;
   border-radius: .4rem;
-  font-size: 1.1rem;
+  font-size: 1.07rem;
   box-shadow: 3px 3px 10px #c4c4c4;
   animation: textleft .9s ease-in-out;
 }
