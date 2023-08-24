@@ -47,12 +47,15 @@ h1, h2{
   color: var(--color-primario);
   text-shadow: 3px 3px 9px #d8d8d8;
   margin: 5rem 10px 0 10px ;
-  animation: textleft .7s ease-in-out;
+  /* animation: textleft .7s ease-in-out; */
+  background-color: var(--bagcground-primario);
+  position: sticky;
+  z-index: 10;
 }
 
 .sincompromiso{
   text-align: center;
-  margin: .5rem;
+  margin: .5rem .7rem;
   color: white;
   background-color: var(--color-primario);
   padding: .3rem;
@@ -61,12 +64,19 @@ h1, h2{
   border-radius: .4rem;
   font-size: 1.07rem;
   box-shadow: 3px 3px 10px #c4c4c4;
-  animation: textleft .9s ease-in-out;
+  animation: textdown .9s ease-in-out;
+  position: sticky;
+  z-index: 1;
 }
 
 @keyframes textleft{
   0%{transform: translateX(-100%);}
   100%{transform: translateX(0);}
+}
+
+@keyframes textdown{
+  0%{opacity: 0; transform: translateY(-45px);}
+  100%{opacity: 1; transform: translateY(0);}
 }
  
 .header-nav{
