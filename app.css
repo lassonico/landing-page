@@ -19,6 +19,7 @@ body{
   /* background-image: linear-gradient(-20deg, var(--color-secundary) 0%, var(--color-primario) 100%); */
   font-family: 'Poppins', sans-serif;
   padding: 0 10px;
+  user-select: none;
 }
 @media (min-width:650px){
   body{
@@ -34,7 +35,7 @@ h1, h2{
 
 .contenedor-principal{
   width: 100%;
-  height: 110vh;
+  height: 120vh;
   overflow: hidden;
 }
 
